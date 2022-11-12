@@ -1,178 +1,569 @@
-<!doctype html>
-<html class="staticrypt-html">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>CANAL WEB</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
-    <!-- do not cache this page -->
-    <meta http-equiv="cache-control" content="max-age=0"/>
-    <meta http-equiv="cache-control" content="no-cache"/>
-    <meta http-equiv="expires" content="0"/>
-    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
-    <meta http-equiv="pragma" content="no-cache"/>
+/*-- CSS MENU --*/
 
-    <style>
-        .staticrypt-hr {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border: 0;
-            border-top: 1px solid #eee;
-        }
-        .staticrypt-page {
-            width: 360px;
-            padding: 8% 0 0;
-            margin: auto;
-            box-sizing: border-box;
-        }
-        .staticrypt-form {
-            position: relative;
-            z-index: 1;
-            background: #000000;
-            max-width: 360px;
-            margin: 0 auto 100px;
-            padding: 45px;
-            text-align: center;
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-        }
-        .staticrypt-form input {
-            outline: 0;
-            background: #000000;
-            width: 100%;
-            border: 0;
-            margin: 0 0 15px;
-            padding: 15px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
-        .staticrypt-form .staticrypt-decrypt-button {
-            text-transform: uppercase;
-            outline: 0;
-            background: #00FFFF;
-            width: 100%;
-            border: 0;
-            padding: 15px;
-            color: #000000;
-            font-size: 14px;
-            cursor: pointer;
-        }
-        .staticrypt-form .staticrypt-decrypt-button:hover, .staticrypt-form .staticrypt-decrypt-button:active, .staticrypt-form .staticrypt-decrypt-button:focus {
-            background: #00FFFF;
-        }
-        .staticrypt-html {
-            height: 100%;
-        }
-        .staticrypt-body {
-            margin-bottom: 1em;
-            background: #000000; /* fallback for old browsers */
-            background: -webkit-linear-gradient(right, #000000, #000000);
-            background: -moz-linear-gradient(right, #000000, #000000);
-            background: -o-linear-gradient(right, #000000, #000000);
-            background: linear-gradient(to left, #000000, #000000);
-            font-family: "Arial", sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        .staticrypt-instructions {
-            margin-top: -1em;
-            margin-bottom: 1em;
-        }
-        .staticrypt-title {
-            font-size: 1.5em;
-			color: #FFFFFF;
-        }
-        .staticrypt-texto {
-            font-size: 1.0em;
-			color: #FFFFFF;
-		}
-        .staticrypt-footer {
-            position: fixed;
-            height: 20px;
-            font-size: 16px;
-            padding: 2px;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin-bottom: 0;
-        }
-        .staticrypt-footer p {
-            margin: 2px;
-            text-align: center;
-            float: right;
-        }
-        .staticrypt-footer a {
-            text-decoration: none;
-        }
-    </style>
+body {
+  background-color: #000000;}
+
+.div_contador{
+    pointer-events: none;}
+  
+hr.barra1 {
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  position: center;
+  width: 100%;
+  border: 2px solid #333333;
+  border-radius: 0px;}
+
+ 
+ .logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    float: left;
+    width: 29%;
+    height: 100px;
+    margin: 2% 2% 2% 2% ;
+    background-color: #000000; /* Black */
+    background-size: 105% 70%;
+    background-repeat: no-repeat;
+    background-position: top;
+    box-shadow: inset 0 0 0 3px grey;
+    border-radius: 15%;
+    color: #ff000000;
+    text-decoration: none;}
+
+.canal_1 {background-image: url("https://play-lh.googleusercontent.com/LH_EMo3IYVP4TMpSjQDgekLWuADM07HBwpA_F0i43D8BWQ-JAcYbtD8KLGcKwCpVVw=w526-h296-rw");}
+.canal_2 {background-image: url("https://play-lh.googleusercontent.com/QiZSqNPeT6mo4ODYtGit1COmBuBKJEa4kQk3PogOf-GE4oAmSYRzWsikx15dKzr863oF=w526-h296-rw");}
+.canal_3 {background-image: url("https://resize.indiatvnews.com/en/centered/newbucket/715_431/2017/12/capture-1512390020.jpg");}
+.canal_4 {background-image: url("https://play-lh.googleusercontent.com/GBySMX2g7B5YaD50McOUKNrpGSw5jBThTJNEmL0OYGpDirOxVoIvCZ-QstW4jATa6ow=w526-h296-rw");}
+.canal_5 {background-image: url("https://kizicdn.com/system/static/thumbs/wide/5976/thumb_5976.jpg?1586162697");}
+.canal_6 {background-image: url("https://www.ecestaticos.com/image/clipping/557/418/767a8acd02676f40a2ea4fc5a36e2ba1/los-juegos-olimpicos-de-google-arranca-el-doodle-champions-island-games-de-tokio.jpg");}
+.canal_7 {background-image: url("https://i.ytimg.com/vi/z-I9Ce1ps1E/maxresdefault.jpg");}
+.canal_8 {background-image: url("https://th.bing.com/th/id/OIP.0U0HRyoTZtS42ty2uwPLXgHaEK?pid=ImgDet&rs=1");}
+.canal_9 {background-image: url("https://playgames365.com/smimg/s/spore-hunter.jpg");}
+.canal_10 {background-image: url("https://icheck.com.vn/wp-content/uploads/2021/06/quet-ma-qr-tren-ung-dung-iphone.jpg");}
+.canal_11 {background-image: url("https://guiadobitcoin.com.br/wp-content/uploads/2020/12/02_An-image-of-the-Polkadot-logo.jpg");}
+.canal_12 {background-image: url("https://i.pinimg.com/originals/9f/63/26/9f63268d6aed0496407e1c605c2c8a8f.png");}
+  
+.opciones {
+    width: 20%;
+    height: 40px;
+    background-color: #ffffff; /* Black */
+    background-size: 90% 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 0 0 2px red;
+    color: #ff000000;
+    float: left;
+    padding:  0px 0px 0px 0px;
+    border-radius:8%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1px;
+    margin: 0% 40% 2% 40%;
+    cursor: pointer;}
+
+.opcion1 {background-image: url("https://1.bp.blogspot.com/-J6Sq7NQWqN8/U-NRAmTG1AI/AAAAAAAAASw/IDSXtu7B5lE/s1600/DESCARGA+MEGA.gif");}
+
+   
+.modalmask {
+	position: fixed;
+	font-family: Arial, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000000;
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 0ms ease-in;
+	-moz-transition: opacity 0ms ease-in;
+	transition: opacity 0ms ease-in;
+	pointer-events: none;
+	overflow-y:auto;
+}
+
+.modalmask:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalbox{
+	width: 100%;
+	position: relative;
+	padding: 0px 0px 0px 0px;
+	background: #000000;
+	border-radius:3px;
+	-webkit-transition: all 0ms ease-in;
+	-moz-transition: all 0ms ease-in;
+	transition: all 0ms ease-in;
+	overflow-y:auto;
+}
+
+.movedown {
+        background-color: #000000;
+	padding: 15px 25px 10px 25px;
+	margin: 0 auto;
+}
+
+.rotate {
+	margin: 0 auto;
+	-webkit-transform: scale(-5,-5); 
+	transform: scale(-5,-5);
+}
+
+.resize {
+	margin: 0 auto;
+	width:0;
+	height:0;
+}
+
+.modalmask:target .movedown{		
+	margin:0 auto;
+}
+.modalmask:target .rotate{		
+	transform: rotate(360deg) scale(1,1);
+  -webkit-transform: rotate(360deg) scale(1,1);
+}
+
+.modalmask:target .resize{
+	width:300px;
+	height:200px;
+}
+
+.nsc{
+	position:absolute;
+	bottom:1%;
+	right:0;
+}
+
+
+/*-- CSS CANAL --*/
+
+
+p {
+  font-size: 10px;
+  color: white;
+  text-align: center;}
+
+
+h1 {
+  font-size: 13px;
+  color: white;
+  text-align: center;}
+
+
+h2 {
+  display:inline;
+  font-size: 15px;
+  color: white;
+  float: left;
+  margin: 0;
+  text-align: left;}
+  
+.nieto {
+  margin: 5px 0px 5px 0px;
+  padding: 0px 0px 5px 0px;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  float: left;
+  background-color: #393939;
+  border: 3px solid #393939;
+  border-radius: 8px;}
+  
+img {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #ffffff;
+  border-radius: 3px;}
+  
+.img_titulo{
+  width: 35%;
+  height: 10%;
+  display:block;
+  margin:auto;
+	border: none;}
+	
+.btn-cerrar {
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  margin: 0px 0px 10px 0px;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  background-color: #000000;
+  box-shadow: inset 0 0 0 3px white;
+  border-radius: 50%;
+  float: right;}
+
+hr.barra1 {
+  margin-top: 0;
+  position: center;
+  width: 100%;
+  border: 2px solid #393939;
+  border-radius: 0px;}
+
+hr.barra2 {
+  margin-top: 0;
+  position: center;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 0px;}
+  
+.servidores {
+  width: auto;
+  height: 22px;
+  margin: 1% 0% 1% 0%;
+  background-color: #393939; /* Gris oscuro */
+  border: 2px solid #393939;
+  float: left;
+}
+
+
+</style>
 </head>
+<body>
 
-<body class="staticrypt-body">
-<div class="staticrypt-page">
-    <div class="staticrypt-form">
-        <div class="staticrypt-instructions">
-            <p class="staticrypt-title">EUROSPORT 2</p>
-            <p></p>
-        </div>
 
-        <hr class="staticrypt-hr">
 
-        <form id="staticrypt-form" action="#" method="post">
-            <input id="staticrypt-password"
-                   type="password"
-                   name="password"
-                   placeholder=""
-                   autofocus/>
+<img class="img_titulo" src="https://raw.githubusercontent.com/Sherpa47/Imagenes/main/Cabeceras/Infantiles.png" />
 
-            <input type="submit" class="staticrypt-decrypt-button" value="ENTRAR"/>
-        </form>
-    </div>
+<hr class="barra2">
 
+<!-- BITCOIN -->
+
+<div><a href="#demo1" class="logo canal_1"><h1>Magic Cat Academy</h1></a></div>
+<div id="demo1" class="modalmask" style="color:#000000;">
+<div align="center" class="modalbox movedown" style="width:auto">
+
+
+<h2>Magic Cat Academy</h2>
+<a href="#" class="btn-cerrar">X</a>
+
+<img src="https://play-lh.googleusercontent.com/LH_EMo3IYVP4TMpSjQDgekLWuADM07HBwpA_F0i43D8BWQ-JAcYbtD8KLGcKwCpVVw=w526-h296-rw">
+
+<div class="nieto">
+<img class="boton servidores" src="https://1.bp.blogspot.com/-HQdBwfd3HD0/XfeXD-gx_lI/AAAAAAAACl4/_aDYdhiKtMw-4kKi-gFRhyN7JPU9tFxKACPcBGAYYCw/s1600/informacion-windowstsui-barra-para-pagina-web-by-windowstsui.com.jpg">
+<hr class="barra1">
+
+<p>Los jugadores controlan a Momo, un gato hechicero de una escuela de magos, que por error convoca a un fantasma que roba un libro de hechizos.2​ Momo lucha contra varios fantasmas y jefes en distribuidos en cinco niveles, teniendo lugar en la biblioteca de la escuela, una cafetería, un salón de clases, un gimnasio y en la azotea. Los fantasmas son derrotados haciendo clic y deslizando el mouse en ciertas direcciones, pertenecientes al símbolo sobre las cabezas de los fantasmas.1​ Las direcciones de deslizamiento incluyen una línea horizontal, una línea vertical, una forma de "v", una forma de "ʌ" y un rayo, el último, la mayoría de los cuales invoca rayos que destruyen a los enemigos en pantalla. En ocasiones, el jugador podrá deslizar en forma de corazón para recuperar la salud.</p>
+
+<hr class="barra1">
+<a href="https://play.google.com/store/apps/details?id=magic.catacademy" target="iframe_4" class= "opciones opcion1"></a>
 </div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js" integrity="sha384-lp4k1VRKPU9eBnPePjnJ9M2RF3i7PC30gXs70+elCVfgwLwx1tv5+ctxdtwxqZa7" crossorigin="anonymous"></script>
+</div>
+</div>
 
-<script>
+<!-- ETHEREUM -->
 
-    var keySize = 256;
-    var iterations = 1000;
-    function decrypt (encryptedMsg, pass) {
-        var salt = CryptoJS.enc.Hex.parse(encryptedMsg.substr(0, 32));
-        var iv = CryptoJS.enc.Hex.parse(encryptedMsg.substr(32, 32))
-        var encrypted = encryptedMsg.substring(64);
+<div><a href="#demo2" class="logo canal_2"><h1>Interland</h1></a></div>
+<div id="demo2" class="modalmask" style="color:#000000;">
+<div align="center" class="modalbox movedown" style="width:auto">
 
-        var key = CryptoJS.PBKDF2(pass, salt, {
-            keySize: keySize/32,
-            iterations: iterations
-        });
 
-        var decrypted = CryptoJS.AES.decrypt(encrypted, key, {
-            iv: iv,
-            padding: CryptoJS.pad.Pkcs7,
-            mode: CryptoJS.mode.CBC
-        }).toString(CryptoJS.enc.Utf8);
-        return decrypted;
-    }
+<h2>Interland</h2>
+<a href="#" class="btn-cerrar">X</a>
 
-    document.getElementById('staticrypt-form').addEventListener('submit', function(e) {
-        e.preventDefault();
+<img src="https://play-lh.googleusercontent.com/QiZSqNPeT6mo4ODYtGit1COmBuBKJEa4kQk3PogOf-GE4oAmSYRzWsikx15dKzr863oF=w526-h296-rw">
 
-        var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = 'b2130d7f99a084388b316c75aa96924cb3de897008a3cf2e7dbaccb6e8028da94935f5dc5bafd943ac49157835ff8d65cf3d329134e884d73a29dd979c0ed8ab1veT+psn614yV/sobSFWJoMj/2C9DmIDda/SASzMAVDqbUe6r6Awh+Db3aDZg7zVAJSd7Ubt7f8b9g2DntaYvxge4uBt0EQ21T7/GyF+H+lqkXGD9daAz7CySxr740/nSv6CfYlRHrxc6KW/RNM1YC5S7skg0xhLzgYczMqR9E4GCJMyClHHJ51UBxhJR3wCxq4rTtO502dPuuQ1RDne3fKaOc/s/+NR2ZXPKVQYbILfB90aG+g/y298mkZCfCMDFo35Uwkgw4GVPAyP1ooehUQqeqwNYen0L4DE6YRfo9voZUXZIvTfwlz6wNhG/cr6eZvtEFqPvOtdSFUS7sCoY4SvarS1ojcZlH8dp8GzE9Go3zw3TDD2jUhdmdFI8N3CkBDS16WuXDlgDYE/VUlxI33334720w5weAC+T0ngcC2+REht6CVgjS+dLcRhIr6WKpOAv+stErdbpBkmAq3nCYdTHgXwuWhUkDRmjWAF03bjVN/GLk2CwsWw2dvRM+QmHHXQlJCt28pZSDo4VvS5uX2xGdbL4nY2TbgtLrXhwjowXAvUEkWGjhqlNOpg+dN0s1zLF1fIT8iFv0LQKawmOCxbZZU726x0/HcrYW2KXQPTtegd4n/r2D+cc6gexbGmZjNVUQtwPkCJxvuDt2gIW1AemEaF77Y3Vfgkc1xSmZZGr5jpA3J5f1XESEmviI8rRROM9yBMsjgLoTqS9B5ueNljY/dtKx1Y/9SzaPi55QgGkVhNcF+lV6a9f+apIALXGsCHoP849W3/vThaojwz6tUmpHe39xaLjUGqKewnkqTQARDNoknQ8SncBfoOoI0vG2R+fOuYN6AbFZTjXQTIsnSDjZ849NTBRqPRQxNREDTDWIkPLCc+7PyCqPRxCVjpyjtk8AQ0O2mTMQDF8NJDrr/3Z/kotk0UIKXsET0M/K3VhGuG064AJbYUXrqjwJ1MHVhunGyZ7zx5dbIC91+k8d4nsdxBse7/YFH85n7nVrSZBee0unsaJWTBDlZY4nxMZEvzSzrdUABrszcxFR8ig2A1b9jav6krisS6Zcv3daSiCCmijc/2aDydyAAOASaXLhybyobSBpejkOowYKW2SKylMiNlS7Frxw7WwebSD8vBDXz6Q4BQRJzpCqSVA3KZrS82df9wsEVfuuovuhWFuOWiX4AUjVNzUk9X7LqLtRyinBdv73U8PPjElzB3nQhYmhe7lgzhI1kpjComiDFQwwA65WvGm2SnLpAQS1KvrUoYOaoIqBWu7iiYuoAziNnsNX9QWumg+lCeuNIEzkzKh+d/S64iPPpl5V/jkWfLDDZnJxeuwHy2WTwxu1Q67MFbjYwPK2th5s0B0cxsvZ0fcA5Pt+sWRBoFjr/Ae/MPDeq9Nz9oTE1swj1QIClkxk/JcFutH19OhKBIjRKO+SSr8H5YNG5ipKeHXYeIroweXuqbDz3P8JogYAvi+uZwm+7OSyxJruiRYixsMPdp1GXGkwEzzA8wS0V4UVC0oILzVL1TgZkgtdYxN++fn99K5mYL7fzmmGppp99TCgQ84LDe0gv9mO9WbwGoyNlplJkv63SkrFZKnQGMU+74vvcpRSSAx53leDHuhl/b/p1ZsFq0kvzIvrQXIaPijDyZUAY6AlWQ3rfuo5HA1JyaQ6Knwdxg4VjLh0OU/ZVsgp6N8XGpAgKH7tojejiIvx2iXo/w4u3vZhvBP+xO9edkCq+ml2WLLrxEUu0Q8Pu3malQMEYjL7NkenFhaUdys5U/cegqUl/3IfQDGAtm9suN1yOFYz4O7rDPAknEwMKChgEZfIyeZmjZM+c2uvf9KRP+G4BGdc1Qe+q8Oih4CWEBUE5oCjJWaOPEJtdhx365LYf/9RnSS+8r2eAyf4ExgS2X45/KKZYNpepBrAiAkv9sF3CstM7KXZTZTO1+/rE9HuWznu3jaXHDsRQTsRVbeOXn1VUhVx9Yy8s/LyyLIHf+7NzGPZvFj1799mIH5jdH5uL/FK2Sad0A0Wks1cggfkab7jZi+ZU=',
-            encryptedHMAC = encryptedMsg.substring(0, 64),
-            encryptedHTML = encryptedMsg.substring(64),
-            decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+<div class="nieto">
+<img class="boton servidores" src="https://1.bp.blogspot.com/-HQdBwfd3HD0/XfeXD-gx_lI/AAAAAAAACl4/_aDYdhiKtMw-4kKi-gFRhyN7JPU9tFxKACPcBGAYYCw/s1600/informacion-windowstsui-barra-para-pagina-web-by-windowstsui.com.jpg">
+<hr class="barra1">
 
-        if (decryptedHMAC !== encryptedHMAC) {
-            alert('Bad passphrase!');
-            return;
-        }
+<p>Interland es una brillante y bonita aventura donde los más pequeños de la casa aprenderán a utilizar internet desde pequeños de un modo seguro. ¡Aprende sobre cyberseguridad de un modo divertido! Disfruta de emocionantes aventuras en un sencillo y bonito mundo en 3D con dulces gráficos y simpáticos personajes, mientras pones en práctica lecciones sobre la amabilidad en el entorno virtual y les enseñas lo importante que es cuidar de los demás para hacer de internet un lugar seguro en el que aprender, hacer grandes amigos y crecer felices.</p>
 
-        var plainHTML = decrypt(encryptedHTML, passphrase);
+<hr class="barra1">
+<a href="https://play.google.com/store/apps/details?id=interland.aplicgwf" target="iframe_4" class= "opciones opcion1"></a>
+</div>
 
-        document.write(plainHTML);
-        document.close();
-    });
-</script>
+
+</div>
+</div>
+
+<!-- TETHER -->
+
+<div><a href="#demo3" class="logo canal_3"><h1>Bunny Coding</h1></a></div>
+<div id="demo3" class="modalmask" style="color:#000000;">
+<div align="center" class="modalbox movedown" style="width:auto">
+
+
+<h2>Bunny Coding</h2>
+<a href="#" class="btn-cerrar">X</a>
+
+<img src="https://resize.indiatvnews.com/en/centered/newbucket/715_431/2017/12/capture-1512390020.jpg">
+
+<div class="nieto">
+<img class="boton servidores" src="https://1.bp.blogspot.com/-HQdBwfd3HD0/XfeXD-gx_lI/AAAAAAAACl4/_aDYdhiKtMw-4kKi-gFRhyN7JPU9tFxKACPcBGAYYCw/s1600/informacion-windowstsui-barra-para-pagina-web-by-windowstsui.com.jpg">
+<hr class="barra1">
+
+<p>Ayudar a un conejo animado a navegar por un laberinto de bloques. El conejo salta de bloque en bloque en respuesta a secuencias de código cada vez más complejas que los jugadores deben crear.</p>
+
+<hr class="barra1">
+<a href="https://play.google.com/store/apps/details?id=kids.coding" target="iframe_4" class= "opciones opcion1"></a>
+</div>
+
+
+
+</div>
+</div>
+
+<!-- BINANCE -->
+
+<div><a href="#demo4" class="logo canal_4"><h1>Magic Cat Academy 2</h1></a></div>
+<div id="demo4" class="modalmask" style="color:#000000;">
+<div align="center" class="modalbox movedown" style="width:auto">
+
+
+<h2>Magic Cat Academy 2</h2>
+<a href="#" class="btn-cerrar">X</a>
+
+<img src="https://play-lh.googleusercontent.com/GBySMX2g7B5YaD50McOUKNrpGSw5jBThTJNEmL0OYGpDirOxVoIvCZ-QstW4jATa6ow=w526-h296-rw">
+
+<div class="nieto">
+<img class="boton servidores" src="https://1.bp.blogspot.com/-HQdBwfd3HD0/XfeXD-gx_lI/AAAAAAAACl4/_aDYdhiKtMw-4kKi-gFRhyN7JPU9tFxKACPcBGAYYCw/s1600/informacion-windowstsui-barra-para-pagina-web-by-windowstsui.com.jpg">
+<hr class="barra1">
+
+<p>Momo ha regresado con un nuevo juego de Magic Cat Academy 2 en el que debe sumergirse en el océano para ayudar a nuevos amigos contra el fantasma de Big Boss.</p>
+
+<hr class="barra1">
+<a href="https://play.google.com/store/apps/details?id=magic.catacademy2" target="iframe_4" class= "opciones opcion1"></a>
+</div>
+
+
+
+
+</div>
+</div>
+
+<!-- USD COIN -->
+
+<div><a href="#demo5" class="logo canal_5"><h1>Math vs Bat</h1></a></div>
+<div id="demo5" class="modalmask" style="color:#000000;">
+<div align="center" class="modalbox movedown" style="width:auto">
+
+
+<h2>Math vs Bat</h2>
+<a href="#" class="btn-cerrar">X</a>
+
+<img src="https://kizicdn.com/system/static/thumbs/wide/5976/thumb_5976.jpg?1586162697">
+
+<div class="nieto">
+<img class="boton servidores" src="https://1.bp.blogspot.com/-HQdBwfd3HD0/XfeXD-gx_lI/AAAAAAAACl4/_aDYdhiKtMw-4kKi-gFRhyN7JPU9tFxKACPcBGAYYCw/s1600/informacion-windowstsui-barra-para-pagina-web-by-windowstsui.com.jpg">
+<hr class="barra1">
+
+<p>Los murciélagos están invadiendo tu castillo, y la única manera de defenderse de ellos es resolver problemas de matemáticas. Puede elegir entre suma, resta, multiplicación o una mezcla de los tres.
+Resolver el rompecabezas de matemáticas a tiempo y disparar, antes de que el bate pase la línea de puntos.</p>
+
+<hr class="barra1">
+<a href="https://play.google.com/store/apps/details?id=math.vsbat56" target="iframe_4" class= "opciones opcion1"></a>
+</div>
+
+
+
+</div>
+</div>
+
+<!-- XRP -->
+
+<div><a href="#demo6" class="logo canal_6"><h1>Champion Island Games</h1></a></div>
+<div id="demo6" class="modalmask" style="color:#000000;">
+<div align="center" class="modalbox movedown" style="width:auto">
+
+
+<h2>Champion Island Games</h2>
+<a href="#" class="btn-cerrar">X</a>
+
+<img src="https://www.ecestaticos.com/image/clipping/557/418/767a8acd02676f40a2ea4fc5a36e2ba1/los-juegos-olimpicos-de-google-arranca-el-doodle-champions-island-games-de-tokio.jpg">
+
+<div class="nieto">
+<img class="boton servidores" src="https://1.bp.blogspot.com/-HQdBwfd3HD0/XfeXD-gx_lI/AAAAAAAACl4/_aDYdhiKtMw-4kKi-gFRhyN7JPU9tFxKACPcBGAYYCw/s1600/informacion-windowstsui-barra-para-pagina-web-by-windowstsui.com.jpg">
+<hr class="barra1">
+
+<p>Vive aventuras relacionadas con el deporte y consigue un total de 7 medallas de distintos minijuegos. Tiro con arco, maratón, escalada, natación, rugby, skate y ping pong te esperan en un entorno increíble para que demuestres tus asombrosos reflejos y tus habilidades físicas únicas. ¿Estás preparado para disfrutar? ¡No te rindas ante las adversidades que se presenten en tu camino, escoge un equipo y pásalo en grande.</p>
+
+<hr class="barra1">
+<a href="https://play.google.com/store/apps/details?id=juegos.delaisladecampeones" target="iframe_4" class= "opciones opcion1"></a>
+</div>
+
+
+</div>
+</div>
+
+<!-- CARDANO -->
+
+<div><a href="#demo7" class="logo canal_7"><h1>Mango Piggy Hero</h1></a></div>
+<div id="demo7" class="modalmask" style="color:#000000;">
+<div align="center" class="modalbox movedown" style="width:auto">
+
+
+<h2>Mango Piggy Hero</h2>
+<a href="#" class="btn-cerrar">X</a>
+
+<img src="https://i.ytimg.com/vi/z-I9Ce1ps1E/maxresdefault.jpg">
+
+<div class="nieto">
+<img class="boton servidores" src="https://1.bp.blogspot.com/-HQdBwfd3HD0/XfeXD-gx_lI/AAAAAAAACl4/_aDYdhiKtMw-4kKi-gFRhyN7JPU9tFxKACPcBGAYYCw/s1600/informacion-windowstsui-barra-para-pagina-web-by-windowstsui.com.jpg">
+<hr class="barra1">
+
+<p>¡Mango Piggy Piggy está de vuelta con un nuevo juego! En su edición de superhéroes, mientras intentas defender tu ciudad contra la invasión de peligrosos robots, deberás lanzar a tus héroes contra tus enemigos y derribarlos para superar un total de 30 niveles diferentes. Combina todo tipo de ataques mientras disfrutas de este divertido juego. ¡Pásalo bien!</p>
+
+<hr class="barra1">
+<a href="https://play.google.com/store/apps/details?id=mango.piggyhero10" target="iframe_4" class= "opciones opcion1"></a>
+</div>
+
+
+
+</div>
+</div>
+
+<!-- SOLANA -->
+
+<div><a href="#demo8" class="logo canal_8"><h1>Deep Chat</h1></a></div>
+<div id="demo8" class="modalmask" style="color:#000000;">
+<div align="center" class="modalbox movedown" style="width:auto">
+
+
+<h2>Deep Chat</h2>
+<a href="#" class="btn-cerrar">X</a>
+
+<img src="https://th.bing.com/th/id/OIP.0U0HRyoTZtS42ty2uwPLXgHaEK?pid=ImgDet&rs=1">
+
+<div class="nieto">
+<img class="boton servidores" src="https://1.bp.blogspot.com/-HQdBwfd3HD0/XfeXD-gx_lI/AAAAAAAACl4/_aDYdhiKtMw-4kKi-gFRhyN7JPU9tFxKACPcBGAYYCw/s1600/informacion-windowstsui-barra-para-pagina-web-by-windowstsui.com.jpg">
+<hr class="barra1">
+
+<p>Deep Chat es una aplicación con la que podrás conocer gente nueva y divertirte chateando con ella.</p>
+
+<hr class="barra1">
+<a href="https://play.google.com/store/apps/details?id=deep.chat2" target="iframe_4" class= "opciones opcion1"></a>
+</div>
+
+
+
+</div>
+</div>
+
+<!-- DOGECOIN -->
+
+<div><a href="#demo9" class="logo canal_9"><h1>Spore Hunter</h1></a></div>
+<div id="demo9" class="modalmask" style="color:#000000;">
+<div align="center" class="modalbox movedown" style="width:auto">
+
+
+<h2>Spore Hunter</h2>
+<a href="#" class="btn-cerrar">X</a>
+
+<img src="https://playgames365.com/smimg/s/spore-hunter.jpg">
+
+<div class="nieto">
+<img class="boton servidores" src="https://1.bp.blogspot.com/-HQdBwfd3HD0/XfeXD-gx_lI/AAAAAAAACl4/_aDYdhiKtMw-4kKi-gFRhyN7JPU9tFxKACPcBGAYYCw/s1600/informacion-windowstsui-barra-para-pagina-web-by-windowstsui.com.jpg">
+<hr class="barra1">
+
+<p>¡Ataca sin piedad a las esporas espaciales que se acerquen a tu nave desplazándote de un lado a otro de la pantalla! No permitas que se hagan con el poder en la galaxia y protege tu vida disparando infinidad de veces a tus enemigos para extinguir hasta su último aliento. Evita a toda costa sufrir daños irreparables ya que solo posees 3 vidas. ¡Repara tu nave y recopila potenciadores para ayudarte a sobrevivir en esta aventura espacial!</p>
+
+<hr class="barra1">
+<a href="https://play.google.com/store/apps/details?id=spore.hunter16" target="iframe_4" class= "opciones opcion1"></a>
+</div>
+
+
+
+</div>
+</div>
+
+<!-- POLYGON -->
+
+<div><a href="#demo10" class="logo canal_10"><h1>Escáner QR</h1></a></div>
+<div id="demo10" class="modalmask" style="color:#000000;">
+<div align="center" class="modalbox movedown" style="width:auto">
+
+
+
+<h2>Escáner QR</h2>
+<a href="#" class="btn-cerrar">X</a>
+
+<img src="https://icheck.com.vn/wp-content/uploads/2021/06/quet-ma-qr-tren-ung-dung-iphone.jpg">
+
+<div class="nieto">
+<img class="boton servidores" src="https://1.bp.blogspot.com/-HQdBwfd3HD0/XfeXD-gx_lI/AAAAAAAACl4/_aDYdhiKtMw-4kKi-gFRhyN7JPU9tFxKACPcBGAYYCw/s1600/informacion-windowstsui-barra-para-pagina-web-by-windowstsui.com.jpg">
+<hr class="barra1">
+
+<p>Sencilla aplicación para escanear códigos QR</p>
+
+<hr class="barra1">
+<a href="https://play.google.com/store/apps/details?id=escaner.qr16" target="iframe_4" class= "opciones opcion1"></a>
+</div>
+
+
+</div>
+</div>
+
+<!-- POLKADOT -->
+
+<div><a href="#demo11" class="logo canal_11"><h1>Radio FM España</h1></a></div>
+<div id="demo11" class="modalmask" style="color:#000000;">
+<div align="center" class="modalbox movedown" style="width:auto">
+
+
+<h2>Radio FM España</h2>
+<a href="#" class="btn-cerrar">X</a>
+
+<img src="https://play-lh.googleusercontent.com/QiZSqNPeT6mo4ODYtGit1COmBuBKJEa4kQk3PogOf-GE4oAmSYRzWsikx15dKzr863oF=w526-h296-rw">
+
+<div class="nieto">
+<img class="boton servidores" src="https://1.bp.blogspot.com/-HQdBwfd3HD0/XfeXD-gx_lI/AAAAAAAACl4/_aDYdhiKtMw-4kKi-gFRhyN7JPU9tFxKACPcBGAYYCw/s1600/informacion-windowstsui-barra-para-pagina-web-by-windowstsui.com.jpg">
+<hr class="barra1">
+
+<p>Interland es una brillante y bonita aventura donde los más pequeños de la casa aprenderán a utilizar internet desde pequeños de un modo seguro. ¡Aprende sobre cyberseguridad de un modo divertido! Disfruta de emocionantes aventuras en un sencillo y bonito mundo en 3D con dulces gráficos y simpáticos personajes, mientras pones en práctica lecciones sobre la amabilidad en el entorno virtual y les enseñas lo importante que es cuidar de los demás para hacer de internet un lugar seguro en el que aprender, hacer grandes amigos y crecer felices.</p>
+
+<hr class="barra1">
+<a href="https://play.google.com/store/apps/details?id=interland.aplicgwf" target="iframe_4" class= "opciones opcion1"></a>
+</div>
+
+
+
+</div>
+</div>
+
+<!-- SHIBA -->
+
+<div><a href="#demo12" class="logo canal_12"><h1>Stikers Whatsapp</h1></a></div>
+<div id="demo12" class="modalmask" style="color:#000000;">
+<div align="center" class="modalbox movedown" style="width:auto">
+
+
+<h2>Stikers Whatsapp</h2>
+<a href="#" class="btn-cerrar">X</a>
+
+<img src="https://i.pinimg.com/originals/9f/63/26/9f63268d6aed0496407e1c605c2c8a8f.png">
+
+<div class="nieto">
+<img class="boton servidores" src="https://1.bp.blogspot.com/-HQdBwfd3HD0/XfeXD-gx_lI/AAAAAAAACl4/_aDYdhiKtMw-4kKi-gFRhyN7JPU9tFxKACPcBGAYYCw/s1600/informacion-windowstsui-barra-para-pagina-web-by-windowstsui.com.jpg">
+<hr class="barra1">
+
+<p>Interland es una brillante y bonita aventura donde los más pequeños de la casa aprenderán a utilizar internet desde pequeños de un modo seguro. ¡Aprende sobre cyberseguridad de un modo divertido! Disfruta de emocionantes aventuras en un sencillo y bonito mundo en 3D con dulces gráficos y simpáticos personajes, mientras pones en práctica lecciones sobre la amabilidad en el entorno virtual y les enseñas lo importante que es cuidar de los demás para hacer de internet un lugar seguro en el que aprender, hacer grandes amigos y crecer felices.</p>
+
+<hr class="barra1">
+<a href="https://play.google.com/store/apps/details?id=interland.aplicgwf" target="iframe_4" class= "opciones opcion1"></a>
+</div>
+
+
+
+</div>
+</div>
+
 </body>
 </html>
